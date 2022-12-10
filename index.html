@@ -25,7 +25,10 @@
                         >
                         <ul class="nav-list">
                             <li>
-                                <a href="#" class="nav-link" href="index.html"
+                                <a
+                                    href="#"
+                                    class="nav-link active-link"
+                                    href="index.html"
                                     >Agencja</a
                                 >
                             </li>
@@ -78,7 +81,7 @@
                     <h1 class="title-clas">
                         efektywne rozwiązania dla waszego biznesu
                     </h1>
-                    <button type="button">Zamów usługe</button>
+                    <button data-modal-open type="button">Zamów usługe</button>
                 </div>
             </section>
             <section class="section">
@@ -147,7 +150,7 @@
                 <div class="container">
                     <h2 class="h2-tittle">Czym się zajmujemy</h2>
                     <ul class="ul-pictures">
-                        <li>
+                        <li class="img-look">
                             <img
                                 src="images/img.3.jpg"
                                 alt="Ręce piszące na
@@ -155,22 +158,25 @@
                                 width="370"
                                 height="294"
                             />
+                            <p class="img-text">Aplikacje komputerowe</p>
                         </li>
-                        <li>
+                        <li class="img-look">
                             <img
                                 src="images/img.1.jpg"
                                 alt="Ręce z telefonem w dłoni w tle znajduje się komputer"
                                 width="370"
                                 height="294"
                             />
+                            <p class="img-text">Rozwiązania graficzne</p>
                         </li>
-                        <li>
+                        <li class="img-look">
                             <img
                                 src="images/img.2.jpg"
                                 alt="Ręce trzymające tablet w jednej ręce w drugiej znajduje się rysik"
                                 width="370"
                                 height="294"
                             />
+                            <p class="img-text">Rozwiązania graficzne</p>
                         </li>
                     </ul>
                 </div>
@@ -471,5 +477,11 @@
                 </div>
             </div>
         </footer>
+
+        <div class="modal is-hidden" data-modal>
+            <button class="modal-bnt" data-modal-close>&times;</button>
+        </div>
+
+        <script src="./js/modal.js"></script>
     </body>
 </html>
