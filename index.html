@@ -25,10 +25,7 @@
                         >
                         <ul class="nav-list">
                             <li>
-                                <a
-                                    href="#"
-                                    class="nav-link active-link"
-                                    href="index.html"
+                                <a href="#" class="nav-link" href="index.html"
                                     >Agencja</a
                                 >
                             </li>
@@ -81,7 +78,9 @@
                     <h1 class="title-clas">
                         efektywne rozwiązania dla waszego biznesu
                     </h1>
-                    <button data-modal-open type="button">Zamów usługe</button>
+                    <button class="btn-order" data-modal-open type="button">
+                        Zamów usługe
+                    </button>
                 </div>
             </section>
             <section class="section">
@@ -167,7 +166,7 @@
                                 width="370"
                                 height="294"
                             />
-                            <p class="img-text">Rozwiązania graficzne</p>
+                            <p class="img-text">Aplikacje mobilne</p>
                         </li>
                         <li class="img-look">
                             <img
@@ -477,11 +476,11 @@
                 </div>
             </div>
         </footer>
-
-        <div class="modal is-hidden" data-modal>
-            <button class="modal-bnt" data-modal-close>&times;</button>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button class="modal-bnt" data-modal-close>&times;</button>
+            </div>
         </div>
-
         <script src="./js/modal.js"></script>
     </body>
 </html>
